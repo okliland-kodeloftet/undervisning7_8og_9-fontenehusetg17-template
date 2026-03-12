@@ -38,6 +38,7 @@ img {
   height: 3.2rem;
   width: 3.2rem;
   display: none;
+  background-color: initial;
 }
 
 /* MAIN */
