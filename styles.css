@@ -21,7 +21,7 @@ img {
 .header {
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: rgba(121, 121, 121, 0.526);
   display: flex;
   justify-content: space-between;
   align-items: center;
