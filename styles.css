@@ -9,6 +9,11 @@ body {
     /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
   font-size: 1.6rem;  /* (16px) */
   padding: 1.6rem;
+font-family: "Roboto";
+}
+
+h1,h2,h3 {
+  font-family: "Bebas Neue";
 }
 
 img {
