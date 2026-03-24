@@ -1,4 +1,19 @@
 /* GLOBAL */
+/*  */
+:root{
+  --darkColor:#000;
+  --lightColor: #fff;
+  --primaryColor: #5f506b;
+  --secondaryColor: #76949f;
+  --accentPrimColor:#6a6b83;
+  --accentSecColor:#86bbbd;
+
+  --defaultSpacing: 1.6rem;
+
+  --defaultFontFamily:"Roboto";
+  --headingFontFamily:"Bebas Neue";
+}
+
 html{
   font-size: 10px;
   /* må stå px for den bestemme relasjonen med em og rem */
@@ -7,9 +22,10 @@ html{
 body {
   margin: 0;
     /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
-  font-size: 1.6rem;  /* (16px) */
+  font-size: var(--defaultSpacing);  /* (16px) */
   padding: 1.6rem;
-font-family: "Roboto";
+font-family: var(--defaultFontFamily) ;
+color: var(--darkColor);
 }
 
 h1,h2,h3 {
@@ -19,14 +35,14 @@ h1,h2,h3 {
 img {
   width: 20rem;/* (200px) */
   height: 20rem;/* (200px) */
-  background-color: #E81CFF;
+  background-color: var(--primaryColor);
 }
 
 /* HEADER */
 .header {
   position: sticky;
   top: 0;
-  background-color: rgba(121, 121, 121, 0.526);
+  background-color: var(--lightColor);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +56,17 @@ img {
     /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
   gap: 1.6rem;/* (16px) */
   list-style-type: none;
+}
+
+.navList a{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--secondaryColor);
+}
+
+.navList a:hover{
+  text-decoration: underline;
+  color: var(--accentSecColor);
 }
 
 .hamburgerIcon{
@@ -58,6 +85,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--lightColor);
 }
 
 .heroIntro {
@@ -85,6 +113,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color:var(--lightColor);
 }
 
 .aboutTextContainer,
@@ -135,7 +164,7 @@ img {
 .projectCard {
   /* height: 40rem;kort bruker ofte en absolutt px størrelse istedet for rem */
   width: 30rem;
-  border: 2px solid black;
+  border: 2px var(--darkColor);
   /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
   display: flex;
   flex-direction: column;
